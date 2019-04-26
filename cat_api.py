@@ -4,5 +4,12 @@ import json
 
 class CatApi:
     def __init__(self):
-        print('ready')
+        self.url = 'https://api.thecatapi.com/v1/'
+        self.api_key = '66839f69-23c8-44ed-a56b-4a6dbf57a872'
+        self.user_id = 'ufmnaa'
 
+    def get_breeds(self):
+        url = self.url + 'breeds'
+        r = requests.get(url, headers={'x-api-key': self.api_key})
+        breeds = r.json()
+        return breeds
