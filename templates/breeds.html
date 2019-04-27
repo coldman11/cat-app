@@ -2,7 +2,16 @@
 
 
 {% block content %}
-    {% for breed in breeds %}
-        {{ breed['name'] }}
-    {% endfor %}
+    <div>
+
+            {% for breed in breeds %}
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ breed['name'] }} <span class="badge badge-secondary">ID: {{ breed['id'] }}</span></h5>
+                        <p class="card-test">{{ breed['description'] }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+
+    </div>
 {% endblock %}
