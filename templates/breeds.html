@@ -8,7 +8,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">{{ breed['name'] }} <span class="badge badge-secondary">ID: {{ breed['id'] }}</span></h5>
-                        <a href="#" class="btn btn-primary">Read more</a>
+                        <a href="/breed/{{ breed['id'] }}" class="btn btn-primary">Read more</a>
                     </div>
                 </div>
             {% endfor %}

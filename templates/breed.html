@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% set breed = breed_img[0]['breeds'][0] %}
+    {{ breed['name'] }}
+{% endblock %}

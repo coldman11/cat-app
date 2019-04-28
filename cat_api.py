@@ -14,12 +14,11 @@ class CatApi:
         breeds = r.json()
         return breeds
 
-    def get_image(self, id):
+    def get_breed_img(self, id):
         url = self.url + 'images/search'
         query_params = {
-            'format': 'src',
             'breed_id': id,
         }
         r = requests.get(url, headers={'x-api-key': self.api_key}, params=query_params)
-        image = r.url
-        return image
+        breed = r.json()
+        return breed
