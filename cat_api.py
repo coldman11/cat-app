@@ -13,3 +13,13 @@ class CatApi:
         r = requests.get(url, headers={'x-api-key': self.api_key})
         breeds = r.json()
         return breeds
+
+    def get_image(self, id):
+        url = self.url + 'images/search'
+        query_params = {
+            'format': 'src',
+            'breed_id': id
+        }
+        r = requests.get(url, headers={'x-api-key': self.api_key}, params=query_params)
+        image = r.url
+        return image
