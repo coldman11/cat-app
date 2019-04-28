@@ -24,4 +24,14 @@
           {% endfor %}
       </div>
     </div>
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title">{{ breed['name'] }}</h2>
+            <h6>{{ breed['temperament'] }}</h6>
+            <p>Origin: {{ breed['origin'] }}</p>
+            <p>{{ breed['description'] }}</p>
+            <p>Life span: {{ breed['life_span'] }} years</p>
+            <p>Weight: {{ breed['weight']['metric'] }} kg</p>
+        </div>
+    </div>
 {% endblock %}
