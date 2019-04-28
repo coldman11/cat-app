@@ -16,18 +16,7 @@ def breeds():
     breeds = api.get_breeds()
     return render_template('breeds.html', breeds=breeds)
 
-
-
-
-
-api.get_image()
-
-
-
-
-
-
-#if __name__ == '__main__':
-    #print('run')
-    #app.run(debug=True)
+if __name__ == '__main__':
+    print('run')
+    app.run(debug=True)
 

@@ -18,7 +18,7 @@ class CatApi:
         url = self.url + 'images/search'
         query_params = {
             'format': 'src',
-            'breed_id': id
+            'breed_id': id,
         }
         r = requests.get(url, headers={'x-api-key': self.api_key}, params=query_params)
         image = r.url
