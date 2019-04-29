@@ -1,5 +1,6 @@
 # cat-app
-A simple app created using Flask, flask-sqlalchemy, flask-bootstrap
+A simple app created using Flask and CatApi
+https://thecatapi.com/
 
 ## Instructions
 1) create virtual environment
